@@ -12,22 +12,13 @@
 
     <title>KidsWatch</title>
 
-
     <style>
-    .modal-dialog {
-        position: fixed;
-        height: 100%;
-        right: 100px;
+    .modal.fade.modal-right .modal-dialog {
+      transform: translate(150%, 0px);
     }
 
-    .modal.fade .modal-dialog {
-      -webkit-transform: translate3d(25%, 0, 0);
-      transform: translate3d(25%, 0, 0);
-    }
-
-    .modal.fade:not(.in) .modal-dialog {
-      -webkit-transform: translate3d(25%, 0, 0);
-      transform: translate3d(25%, 0, 0);
+    .modal.show.modal-right .modal-dialog {
+      transform: none;
     }
   </style>
 
@@ -484,8 +475,8 @@
 
 
     <!-- Modal -->
-    <div class="modal right fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal fade modal-right" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="margin-right: 0px;">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">The Lion King (2019)</h5>
