@@ -11,6 +11,26 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/litera/bootstrap.min.css" integrity="sha384-enpDwFISL6M3ZGZ50Tjo8m65q06uLVnyvkFO3rsoW0UC15ATBFz3QEhr3hmxpYsn" crossorigin="anonymous">
 
     <title>KidsWatch</title>
+
+
+    <style>
+    .modal-dialog {
+        position: fixed;
+        height: 100%;
+        right: 100px;
+    }
+
+    .modal.fade .modal-dialog {
+      -webkit-transform: translate3d(25%, 0, 0);
+      transform: translate3d(25%, 0, 0);
+    }
+
+    .modal.fade:not(.in) .modal-dialog {
+      -webkit-transform: translate3d(25%, 0, 0);
+      transform: translate3d(25%, 0, 0);
+    }
+  </style>
+
   </head>
   <body class="page-bootswatch">
 
@@ -57,7 +77,7 @@
               <p>
                 <div class="media">
                   <div class="media-body">
-                    <small>Available on</small>
+                    <div class="media-body"></div>
                   </div>
                   <img src="https://images.justwatch.com/icon/59562423/s100" style="width:28px; margin: 0px 3px 0px 0px;">
                   <img src="https://images.justwatch.com/icon/52449861/s100" style="width:28px; margin: 0px 0px 0px 3px;">
@@ -91,7 +111,7 @@
               <p>
                 <div class="media">
                   <div class="media-body">
-                    <small>Available on</small>
+                    <div class="media-body"></div>
                   </div>
                   <img src="https://images.justwatch.com/icon/59562423/s100" style="width:28px; margin: 0px 3px 0px 0px;">
                   <img src="https://images.justwatch.com/icon/52449861/s100" style="width:28px; margin: 0px 0px 0px 3px;">
@@ -125,7 +145,7 @@
               <p>
                 <div class="media">
                   <div class="media-body">
-                    <small>Available on</small>
+                    <div class="media-body"></div>
                   </div>
                   <img src="https://images.justwatch.com/icon/59562423/s100" style="width:28px; margin: 0px 3px 0px 0px;">
                   <img src="https://images.justwatch.com/icon/52449861/s100" style="width:28px; margin: 0px 0px 0px 3px;">
@@ -159,7 +179,7 @@
               <p>
                 <div class="media">
                   <div class="media-body">
-                    <small>Available on</small>
+                    <div class="media-body"></div>
                   </div>
                   <img src="https://images.justwatch.com/icon/59562423/s100" style="width:28px; margin: 0px 3px 0px 0px;">
                   <img src="https://images.justwatch.com/icon/52449861/s100" style="width:28px; margin: 0px 0px 0px 3px;">
@@ -193,7 +213,7 @@
               <p>
                 <div class="media">
                   <div class="media-body">
-                    <small>Available on</small>
+                    <div class="media-body"></div>
                   </div>
                   <img src="https://images.justwatch.com/icon/59562423/s100" style="width:28px; margin: 0px 3px 0px 0px;">
                   <img src="https://images.justwatch.com/icon/52449861/s100" style="width:28px; margin: 0px 0px 0px 3px;">
@@ -205,6 +225,37 @@
 
         </div>
 
+        <div class="col">
+          <div class="card border-light mb-3" style="max-width: 20rem;">
+            <div class="card-body">
+              <a href="../index.html" class="stretched-link"></a>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVFTOeTH6WifXqTbj0NKdEPcCLfrUpKzknspfckAO7kkthc52h7G6dIIcxsw&s=10" class="card-img-top">
+
+              <p class="card-text">
+                <small>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                <span class="pull-right">
+                  1 h 44m
+                </span>
+              </small>
+              </p>
+
+              <p>
+                <div class="media">
+                  <div class="media-body"></div>
+                  <img src="https://images.justwatch.com/icon/59562423/s100" style="width:28px; margin: 0px 3px 0px 0px;">
+                  <img src="https://images.justwatch.com/icon/52449861/s100" style="width:28px; margin: 0px 0px 0px 3px;">
+                </div>
+              </p>
+
+            </div>
+          </div>
+
+        </div>
 
       </div>
 
@@ -433,11 +484,11 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal right fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">The Lion King</h5>
+            <h5 class="modal-title" id="exampleModalLabel">The Lion King (2019)</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -448,7 +499,6 @@
 
               <div class="card border-light mb-3" style="max-width: 20rem;">
                 <div class="card-body">
-                  <a href="../index.html" class="stretched-link" data-toggle="modal" data-target="#exampleModal"></a>
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0WM9TdwG-b6qH0zbkm-Qkx4ioMRn8G7i8VxtBAYLFw9lD38OHcUcLX2L-eg&s=10" class="card-img-top">
 
                   <p class="card-text">
@@ -474,8 +524,18 @@
                     </div>
                   </p>
 
+                  <p>
+                    <small>
+                      <span class="badge badge-pill badge-primary">Fantasy</span>
+                      <span class="badge badge-pill badge-primary">Animation</span>
+                      <span class="badge badge-pill badge-primary">Comedy</span>
+                      <span class="badge badge-pill badge-primary">Action</span>
+                    </small>
+                  </p>
+
                 </div>
               </div>
+
 
 
             </div>
